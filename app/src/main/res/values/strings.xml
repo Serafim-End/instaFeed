@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">InstaTest</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
+    <string name="sign_in_error">Sign in error.</string>
+    <string name="sign_in_succeeded">Sign in succeeded</string>
+    <string name="action_exit">Exit</string>
+    <string name="likeBtn">like</string>
+    <string name="commentBtn">comment</string>
+</resources>

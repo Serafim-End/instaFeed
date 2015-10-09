@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+    <!--android:background="@color/material_300"-->
+
+
+    <RelativeLayout
+        android:id="@+id/topUserInfoLayout"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_shadow_top"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentBottom="false" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_photo"
+            android:layout_toEndOf="@+id/user_photo"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:paddingStart="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_like_counter"
+            android:layout_gravity="center"
+            android:text="Test Name"/>
+
+        <TextView
+            android:id="@+id/when_was_photo_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="when it was"
+            android:textSize="12sp"
+            android:textColor="@color/material_400"
+            android:paddingRight="8dp"
+            android:paddingEnd="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    <!--<android.support.design.widget.CoordinatorLayout-->
+    <!--android:id="@+id/insta_image"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<ImageView-->
+    <!--android:id="@+id/ivFeedCenter"-->
+    <!--android:src="@drawable/empty_grey"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scaleType="centerCrop" />-->
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/insta_image"
+        android:layout_below="@+id/topUserInfoLayout"
+        android:background="@drawable/border_shadow_image"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivFeedCenter"
+            android:src="@drawable/empty_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/downMenuLayout"
+        style="@style/CardView"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/border_shadow_bottom"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/insta_image"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/button_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/panel_feed_action"
+                android:src="@drawable/ic_heart_outline_grey" />
+
+
+            <Button
+                android:id="@+id/likersButton"
+                android:layout_width="match_parent"
+                android:background="@drawable/panel_feed_action"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:textSize="14sp"
+                android:textColor="#9C9C9C"
+                android:textStyle="bold"
+                android:text="like"/>
+
+            <!--style="@style/CodeFont"-->
+        </LinearLayout>
+        <!--android:background="@android:color/transparent"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/button_comment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_comment_outline_grey"
+                android:background="@drawable/panel_feed_action" />
+
+
+            <Button
+                android:id="@+id/commentBtn"
+                android:layout_width="match_parent"
+                android:background="@drawable/panel_feed_action"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:textStyle="bold"
+                android:textColor="#9C9C9C"
+                android:textSize="14sp"
+                android:text="comment"/>
+
+            <!--style="@style/CodeFont"-->
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="StartScreenTextColor">#FFFFFF</color>
+    <color name="primary_dark">#1785AA</color>
+    <color name="text_primary_dark">#176489</color>
+    <color name="primary_transparent">#3295bac8</color>
+    <color name="primary">#3295ba</color>
+    <color name="accent">#1eaaf1</color>
+    <color name="dark">#000</color>
+    <color name="material_dark_800">#424242</color>
+    <color name="instagram_official">#3f729b</color>
+    <color name="insta_green">#60ab59</color>
+    <color name="insta_paper">#428bca</color>
+    <color name="material_200">#7eeeeeee</color>
+    <color name="material_300">#E0E0E0</color>
+    <color name="text_like_counter">#2b5a83</color>
+    <color name="material_400">#BDBDBD</color>
+    <color name="material_dark_500">#9E9E9E</color>
+    <color name="material_dark_600">#757575</color>
+    <color name="material_dark_700">#616161</color>
+    <color name="material_dark_900">#212121</color>
+</resources>
